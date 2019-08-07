@@ -1,10 +1,10 @@
 // Template C++ Program
 
-// Single Line Comment
+// single line comment
 
 /*
-Multi-line
-Comment
+multi-line
+comment
 */
 
 #include <iostream>
