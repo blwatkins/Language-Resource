@@ -1,9 +1,9 @@
 // Template Java Program
 
-// Single line comment
+// single line comment
 
 /*
-Multi-line
+multi-line
 comment
 */
 
