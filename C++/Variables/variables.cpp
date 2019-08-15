@@ -37,7 +37,6 @@ int main(int argc, char** argv) {
 
     bool myBool {false};
 
-    // full list of climits variables available at <http://www.cplusplus.com/reference/climits/>
     int maxInt = INT_MAX; // from the climits header file
 
     cout << "The value of ul is " << ul << endl;
