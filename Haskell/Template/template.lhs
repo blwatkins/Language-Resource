@@ -1,4 +1,4 @@
--- Template Haskell Program
+-- Template Literate Haskell Program
 
 > module Main where
 
