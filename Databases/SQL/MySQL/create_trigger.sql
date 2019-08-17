@@ -1,0 +1,16 @@
+CREATE TABLE Employee (
+    id INTEGER PRIMARY KEY
+);
+
+DELIMITER //
+
+CREATE TRIGGER valid_emp_id BEFORE INSERT
+ON Employee FOR EACH ROW
+BEGIN
+    IF NEW.id < 10000 OR NEW.id >= 100000 THEN 
+        SIGNAL SQLSTATE '45000'
+        SET MESSAGE_TEXT = 'invalid employee id';
+    END IF; 
+END; //
+
+DELIMITER ;
