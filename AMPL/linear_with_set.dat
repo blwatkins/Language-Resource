@@ -1,0 +1,13 @@
+# Data file for linear program with sets
+# := --> assignment operator (used in Pascal and PL1)
+
+set Products := bands coils;
+
+param: tonsPerHour profitPerTon maximumTons :=
+bands     200         25          6000
+coils     140         30          4000       ;
+
+# can write each param line separately
+# param tonsPerHour := bands 200 coils 140;
+
+param totalTime := 41;

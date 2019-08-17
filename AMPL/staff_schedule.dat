@@ -1,0 +1,21 @@
+set DAYS := M T W TH F S SU;
+
+# CHANGE DAYS WORKED TO EMPLOYEES PRESENT
+
+set EMPLOYEES_PRESENT :=
+ (M, M) (M, TH) (M, F) (M, S) (M, SU)
+ (T, M) (T, T) (T, F) (T, S) (T, SU)
+ (W, M) (W, T) (W, W) (W, S) (W, SU)
+ (TH, M) (TH, T) (TH, W) (TH, TH) (TH, SU)
+ (F, M) (F, T) (F, W) (F, TH) (F, F) 
+ (S, T) (S, W) (S, TH) (S, F) (S, S)
+ (SU, W) (SU, TH) (SU, F) (SU, S) (SU, SU);
+
+param: requiredEmployees :=
+ M       10
+ T       12
+ W       20
+ TH      17
+ F       15
+ S       12
+ SU      5 ;
