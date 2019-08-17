@@ -41,5 +41,14 @@ int main(int argc, char** argv) {
 
     cout << "The value of ul is " << ul << endl;
 
+    // type casts
+
+    int myInt = (int)f;
+    int myInt2 = int(d);
+    float myFloat = static_cast<float>(l);
+
+    cout << "The value of myInt is " << myInt << endl;
+    cout << "The size of myInt is " << sizeof(myInt) << " bytes" << endl;
+
     return 0;
 }

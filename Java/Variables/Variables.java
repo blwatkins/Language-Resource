@@ -20,6 +20,9 @@ class Variables {
         String myString = "This is my string";
 
         System.out.println("The value of f is " + f);
+
+        // Conversions
+        int myInt = (int)f;
     }
 
 }
