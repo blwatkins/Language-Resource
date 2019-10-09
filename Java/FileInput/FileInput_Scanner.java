@@ -12,7 +12,7 @@ class FileInput_Scanner {
             File file = new File("hope.txt");
             Scanner input = new Scanner(file);
 
-            while (input.hasNext()) {
+            while (input.hasNextLine()) {
                 String line = input.nextLine();
                 System.out.println(line);
             }

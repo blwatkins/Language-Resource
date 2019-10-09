@@ -9,11 +9,16 @@ public class FileInput_BufferedReader {
     public static void main(String[] args) {
         String fileName = "hope.txt";
 
-        try(BufferedReader br = new BufferedReader(new FileReader(fileName))) {
+        try {
+            BufferedReader br = new BufferedReader(new FileReader(fileName));
+            String line = "";
 
-            for(String line = br.readLine(); line != null; line = br.readLine() ) {
+            while(br.ready()) {
+                line = br.readLine();
                 System.out.println(line);
             }
+
+            br.close();
 
         } catch (Exception e) {
             System.out.println(e);
