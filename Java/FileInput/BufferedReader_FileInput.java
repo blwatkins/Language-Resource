@@ -4,7 +4,7 @@
 import java.io.BufferedReader;
 import java.io.FileReader;
 
-public class FileInput {
+public class BufferedReader_FileInput {
 
     public static void main(String[] args) {
         String fileName = "hope.txt";
