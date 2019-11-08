@@ -19,3 +19,12 @@ puts "this is a string".capitalize
 my_string = "This is my string"
 my_string.reverse!.upcase!
 puts my_string
+
+# the include method checks to see if a string contains a substring
+if my_string.reverse!.downcase!.include? "this"
+    puts "yes"
+end
+
+# string replacement
+replaced = my_string.gsub(/this/, "that")
+puts replaced
