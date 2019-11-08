@@ -1,5 +1,5 @@
 addition = 4 + 5
-puts "4 + 5 = #{addition}" # string interpolation
+puts "4 + 5 = #{addition}" # string interpolation (only works with double quotations)
 
 subtraction = 4 - 5
 puts "4 - 5 = #{subtraction}"
