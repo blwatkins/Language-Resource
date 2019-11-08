@@ -12,6 +12,7 @@ get '/' do
     "Hello, World!"
 end
 
+# html in a route
 get '/about' do
     output = '<h1>About Page</h1>'
     output << '<p>This is the about page</p>'
