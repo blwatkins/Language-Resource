@@ -1,0 +1,14 @@
+<html>
+    <body>
+        <h1>Date</h1>
+        <p>
+            <% 
+                year = Time.now.year
+                month = Time.now.month
+                day = Time.now.day
+            %>
+            The date is <%= year %> - <%= month %> - <%= day %>
+        </p>
+        <%= erb :_footer %>
+    </body>
+</html>

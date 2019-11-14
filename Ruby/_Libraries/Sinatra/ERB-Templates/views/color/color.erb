@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <style>
+            body {
+                background-color: rgb(<%= @red %>, <%= @green %>, <%= @blue %>);
+            }
+        </style>
+        <title> <%= @page_title %></title>
+    </head>
+    <body>
+        <h1><%= @page_title %></h1>
+        <p>
+            The color is color(<%= @red %>, <%= @green %>, <%= @blue %>);
+        </p>
+    </body>
+</html>

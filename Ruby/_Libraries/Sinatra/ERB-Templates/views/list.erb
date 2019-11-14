@@ -1,0 +1,14 @@
+<html>
+    <body>
+        <h1>List</h1>
+        <%
+            fruits = ["orange", "apple", "kiwi", "banana"]
+        %>
+        <ul>
+            <% fruits.each do |fruit| %>
+                <li><%= fruit %></li>
+            <% end %>
+        </ul>
+        <%= erb :_footer %>
+    </body>
+</html>
