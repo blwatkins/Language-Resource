@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <% if @name.nil? %>
+            <form action="/form" method="post">
+                Name: <input type="text" name="name"></input>
+                <br/>
+                <input type="submit" value="Submit"></input>
+            </form>
+        <% else %>
+            <h1>Welcome, <%= h(@name) %></h1>
+        <% end %>
+    </body>
+</html>
