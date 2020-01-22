@@ -28,3 +28,10 @@ end
 # string replacement
 replaced = my_string.gsub(/this/, "that")
 puts replaced
+
+my_string = 'my string is the best'
+words = my_string.split(' ') # split returns an array of strings
+
+words.each do |s|
+    puts s
+end
