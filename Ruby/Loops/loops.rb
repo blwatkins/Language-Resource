@@ -43,3 +43,19 @@ puts '-----------------------'
 end
 
 puts '-----------------------'
+
+# upto and downto iterators
+
+"L".upto("P") do |letter|
+  print letter + " "
+end
+
+puts ' '
+
+90.downto(80) do |value|
+  print value.to_s + " "
+end
+
+puts ' '
+
+puts '-----------------------'
