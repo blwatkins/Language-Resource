@@ -35,3 +35,11 @@ words = my_string.split(' ') # split returns an array of strings
 words.each do |s|
     puts s
 end
+
+# concatenation
+
+first_string = 'this is a '
+second_string = 'string'
+puts first_string + second_string
+first_string << second_string # first_string += second_string also works!
+puts first_string
