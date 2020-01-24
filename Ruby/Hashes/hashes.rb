@@ -1,7 +1,7 @@
 # Hashes
 # A collection of key-value pairs
 
-my_hash = { 
+my_hash = {
 	'name' => 'Eric',
   	'age' => 26,
   	'hungry?' => true
@@ -20,3 +20,6 @@ second_hash['name'] = 'Bob'
 second_hash.each do |x, y|
 	puts "#{x}: #{y}"
 end
+
+# empty hash with default value for undefined keys
+third_hash = Hash.new('default')
