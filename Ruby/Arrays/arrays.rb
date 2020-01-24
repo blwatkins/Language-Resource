@@ -11,7 +11,9 @@ puts '-----------------------'
 
 # adding an element to an array
 
-my_array.push(6);
+my_array.push(6)
+
+my_array << 7
 
 print my_array # output an array
 
