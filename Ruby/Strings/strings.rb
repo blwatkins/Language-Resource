@@ -35,7 +35,3 @@ words = my_string.split(' ') # split returns an array of strings
 words.each do |s|
     puts s
 end
-
-# converting a numeric value to a string
-value = 45
-puts 'The value of value is ' + value.to_s

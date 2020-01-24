@@ -9,6 +9,10 @@ end
 
 puts '-----------------------'
 
+# adding an element to an array
+
+my_array.push(6);
+
 print my_array # output an array
 
 puts ''
