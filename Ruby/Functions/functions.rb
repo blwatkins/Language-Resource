@@ -18,3 +18,14 @@ value = add(15, 2901)
 puts value
 
 puts '-----------------------'
+
+# Implicit return
+# Ruby functions will return the last evaluated expression
+
+def sub(a, b)
+    a - b
+end
+
+puts sub(7, 234)
+
+puts '-----------------------'
