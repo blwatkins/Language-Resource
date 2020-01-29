@@ -30,3 +30,16 @@ print books
 puts ''
 
 puts '-----------------------'
+
+# performing an action on each array item
+# to mutate array in-place, use collect!
+
+doubled_my_array = my_array.collect do |x|
+    x * 2
+end
+
+print doubled_my_array
+
+puts ''
+
+puts '-----------------------'
