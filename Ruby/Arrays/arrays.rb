@@ -33,6 +33,7 @@ puts '-----------------------'
 
 # performing an action on each array item
 # to mutate array in-place, use collect!
+# can also use the map and map! methods
 
 doubled_my_array = my_array.collect do |x|
     x * 2
