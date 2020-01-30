@@ -21,6 +21,19 @@ puts ''
 
 puts '-----------------------'
 
+# removing an element from an array
+
+last = my_array.pop
+
+print my_array
+
+puts ''
+
+puts "last = #{last}"
+
+puts '-----------------------'
+
+
 # sorting an array
 
 books = ["Charlie and the Chocolate Factory", "War and Peace", "Utopia", "A Brief History of Time", "A Wrinkle in Time"]

@@ -82,3 +82,12 @@ filtered_hash = symbol_hash.select do |key, value|
 end
 
 puts filtered_hash
+
+puts '-----------------------'
+
+# deleting a key-value pair from a hash
+symbol_hash.delete(:two)
+
+puts symbol_hash
+
+puts '-----------------------'
