@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript in HTML</title>
+    </head>
+    <body>
+        <h1>JavaScript in HTML</h1>
+        <hr/>
+        <h2>Alerts</h2>
+        <script>
+            function giveAlert() {
+                alert("You clicked the button");
+            }
+        </script>
+        <button onclick="giveAlert()">Click Me!</button>
+        <hr/>
+        <h2>Changing HTML Text</h2>
+        <script>
+            function changeP1Text() {
+                let p = document.getElementById("p1");
+                p.innerHTML = "This paragraph has changed";
+            }
+        </script>
+        <p id="p1">This is paragraph p1</p>
+        <button onclick="changeP1Text()">Change Text</button>
+        <hr/>
+        <h2>Changing HTML Style</h2>
+        <script type="text/javascript">
+            function makeP2Blue() {
+                // get the element with id p2
+                let p = document.getElementById("p2");
+                // change the color of the element to blue
+                p.style.color = "blue";
+            }
+
+            function makeP2Black() {
+                let p = document.getElementById("p2");
+                p.style.color = "black";
+            }
+        </script>
+        <p id="p2" onmouseover="makeP2Blue()" onmouseout="makeP2Black()">This is paragraph p2</p>
+        <hr/>
+        <h2>Adding HTML Elements With InnerHTML</h2>
+        <script>
+            function addElementsToList1() {
+                let fruits = ["apple", "strawberry", "kiwi"];
+                let ul = document.getElementById("list1");
+
+                for (let i = 0; i < fruits.length; i++) {
+                    let li = "<li>" + fruits[i] + "</li>";
+                    ul.innerHTML = ul.innerHTML + li;
+                }
+            }
+        </script>
+        <ul id="list1">
+        </ul>
+        <br/>
+        <button onclick="addElementsToList1()">Add Elements</button>
+        <hr/>
+        <h2>Adding HTML Elements with <code>createElement()</code></h2>
+        <script>
+            function addElementsToList2() {
+                let fruits = ["banana", "apple", "blueberry"];
+                ul = document.getElementById("list2");
+
+                for (let i = 0; i < fruits.length; i++) {
+                    let li = document.createElement("li");
+                    li.innerHTML = fruits[i];
+                    ul.appendChild(li);
+                }
+
+            }
+        </script>
+        <ul id="list2">
+        </ul>
+        <br/>
+        <button onclick="addElementsToList2()">Add Elements</button>
+        <hr/>
+        <h2>Getting Input Values from the User</h2>
+        <script>
+            function addFruitFromUser() {
+                let input = document.getElementById("fruitName");
+                let inputValue = input.value;
+                let ul = document.getElementById("list3");
+                let li = document.createElement("li");
+                li.innerHTML = inputValue;
+                ul.appendChild(li);
+            }
+        </script>
+        <form>
+            Enter a Fruit: <input id="fruitName" type="text"/><br/>
+        </form>
+        <button onclick="addFruitFromUser()">Add Fruit</button>
+        <ul id="list3">
+        </ul>
+        <hr/>
+        <h2>Using Number Inputs</h2>
+        <script>
+            function squareTheNumber() {
+                let input = document.getElementById("number");
+                let inputValue = input.value;
+                let inputNumber = parseInt(inputValue);
+                let squared = inputNumber ** 2;
+                window.alert(squared);
+            }
+        </script>
+        <form>
+            Enter a Number: <input id="number" type="number"/><br/>
+        </form>
+        <button onclick="squareTheNumber()">Square the Number</button>
+    </body>
+</html>
