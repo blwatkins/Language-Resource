@@ -27,6 +27,9 @@ numbers = phone_numbers.values()
 for num in numbers:
     print(num)
 
+# iterating over keys and values
+for key, value in phone_numbers.items():
+	print(key + ': ' + str(value))
 
 # in keyword checks for existence of key in dictionary
 if "B" in letters:
