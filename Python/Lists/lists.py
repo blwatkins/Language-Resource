@@ -1,9 +1,12 @@
 # !/usr/bin/env python
 # Lists
 
+my_list = list()  # empty list
+print(my_list)
+
 my_numbers = [1, 2, 3, 4, 5, 6]
 
-my_letters = []
+my_letters = []  # empty list
 
 my_letters.append('a')
 my_letters.append('b')
@@ -33,4 +36,4 @@ my_numbers[0:] = []
 letters = ['a', 'b', 'c']
 numbers = [1, 2, 3]
 tuples = zip(letters, numbers)
-print(tuples)
+print(list(tuples))
