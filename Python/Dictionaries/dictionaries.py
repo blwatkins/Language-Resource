@@ -2,6 +2,9 @@
 # Dictionaries
 
 # creating dictionaries
+my_dictionary = dict()
+print(my_dictionary)
+
 phone_numbers = {"Bob": 123, "George": 456, "Phil": 789, "Mick": 123, "Bill": 456}
 
 letters = {}
@@ -12,22 +15,18 @@ letters["A"] = 1
 names = phone_numbers.keys()
 
 for name in names:
-    print name
+    print(name)
 
 for key in phone_numbers:
-    print key
+    print(key)
 
-for key in phone_numbers.iterkeys():
-    print key
 
 # iterating over values
 numbers = phone_numbers.values()
 
 for num in numbers:
-    print num
+    print(num)
 
-for number in phone_numbers.itervalues():
-    print number
 
 # in keyword checks for existence of key in dictionary
 if "B" in letters:
@@ -51,10 +50,12 @@ new_phone_book = phone_numbers.copy()
 new_phone_book.clear()
 
 # merge a dictionary
-new_phone_book = {"House": 473, "You": 034, "Him": 382}
+new_phone_book = {"House": 473, "You": 834, "Him": 382}
 
 # no change to new_phone_book, only alters phone_numbers
 phone_numbers.update(new_phone_book)
 
 # create list of key-value tuple pairs
 key_value_list = new_phone_book.items()
+print(key_value_list)
+
