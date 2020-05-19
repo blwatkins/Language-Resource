@@ -23,7 +23,7 @@ print(my_letters)
 for number in my_numbers:
     print(number)
 
-# splicing and array
+# splicing an array
 middle_numbers = my_numbers[3:8]
 
 # deleting by index
