@@ -1,2 +1,2 @@
-public class MallardDuck {
+public class MallardDuck extends Duck {
 }
