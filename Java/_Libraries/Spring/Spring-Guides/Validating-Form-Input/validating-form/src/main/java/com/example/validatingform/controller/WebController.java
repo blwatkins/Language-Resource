@@ -11,7 +11,6 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 import com.example.validatingform.model.Person;
 
-
 @Controller
 public class WebController implements WebMvcConfigurer {
 
