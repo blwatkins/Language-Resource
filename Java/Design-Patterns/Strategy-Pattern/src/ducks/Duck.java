@@ -1,3 +1,5 @@
+package ducks;
+
 public abstract class Duck {
 
     public void swim() {
