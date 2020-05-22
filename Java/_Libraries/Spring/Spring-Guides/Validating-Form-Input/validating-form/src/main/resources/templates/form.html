@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+    <head>
+        <title>Person Form</title>
+    </head>
+    <body>
+        <form action="#" method="post" th:action="@{/}" th:object="${person}">
+        	Name: <input type="text" th:field="*{name}"/><br/> 
+        	<p th:if="${#fields.hasErrors('name')}" th:errors="*{name}"></p>
+        	Age: <input type="number" th:field="*{age}"/><br/>
+        	<p th:if="${#fields.hasErrors('age')}" th:errors="*{age}"></p>
+        	<input type="submit"/>
+        	<input type="reset"/>
+        </form>
+    </body>
+</html>

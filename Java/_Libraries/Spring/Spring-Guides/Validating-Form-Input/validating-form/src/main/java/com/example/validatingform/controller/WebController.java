@@ -25,11 +25,14 @@ public class WebController implements WebMvcConfigurer {
 
     @PostMapping("/")
     public String checkPersonData(@Valid Person person, BindingResult result) {
+        String view = "";
 
         if (result.hasErrors()) {
-            return "form";
+            view = "form";
         } else {
-            return "redirect:/results";
+            view = "redirect:/results";
         }
+
+        return view;
     }
 }
