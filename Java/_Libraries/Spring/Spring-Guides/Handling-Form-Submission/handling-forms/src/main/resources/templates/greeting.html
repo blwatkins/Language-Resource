@@ -6,8 +6,8 @@
     <body>
         <h1>Greeting Form</h1>
         <form action="#" method="post" th:action="@{/greeting}" th:object="${greeting}">
-            ID: <input type="number" th:feild="*{id}"/><br/>
-            Content: <input type="text" th:feild="*{content}"/><br/>
+            ID: <input type="number" th:field="*{id}"/><br/>
+            Content: <input type="text" th:field="*{content}"/><br/>
             <input type="submit" value="Submit"/>
             <input type="reset" value="Reset"/>
         </form>
