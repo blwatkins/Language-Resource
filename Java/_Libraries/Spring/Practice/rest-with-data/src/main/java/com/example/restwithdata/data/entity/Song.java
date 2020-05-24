@@ -8,10 +8,15 @@ public class Song {
     @GeneratedValue(strategy=GenerationType.AUTO)
     private long id;
 
+    @ManyToOne
+    @JoinColumn(name="albumID")
+    Album album;
+
     private String name;
     private int trackNumber;
 
-    public Song(String name, int trackNumber) {
+    public Song(Album album, String name, int trackNumber) {
+        this.album = album;
         this.name = name;
         this.trackNumber = trackNumber;
     }
@@ -24,12 +29,20 @@ public class Song {
         return id;
     }
 
+    public Album getAlbum() {
+        return album;
+    }
+
     public String getName() {
         return name;
     }
 
     public int getTrackNumber() {
         return trackNumber;
+    }
+
+    public void setAlbum(Album album) {
+        this.album = album;
     }
 
     public void setName(String name) {
