@@ -1,4 +1,8 @@
 package com.example.restwithdata.data.repository;
 
-public class ArtistRepository {
+import org.springframework.data.repository.CrudRepository;
+
+import com.example.restwithdata.data.entity.Artist;
+
+public interface ArtistRepository extends CrudRepository<Artist, Long> {
 }
