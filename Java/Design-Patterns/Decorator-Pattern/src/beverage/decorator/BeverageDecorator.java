@@ -1,4 +1,7 @@
 package beverage.decorator;
 
-public class BeverageDecorator {
+import beverage.Beverage;
+
+public abstract class BeverageDecorator extends Beverage {
+    protected Beverage beverage;
 }
