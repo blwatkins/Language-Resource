@@ -13,6 +13,7 @@ public class Artist {
     @OneToMany(mappedBy="artist")
     private List<Album> albums;
 
+    @Column(nullable=false)
     private String name;
 
     public Artist(String name) {

@@ -12,7 +12,10 @@ public class Song {
     @JoinColumn(name="albumID", nullable=false)
     Album album;
 
+    @Column(nullable=false)
     private String name;
+
+    @Column(nullable=false)
     private int trackNumber;
 
     public Song(Album album, String name, int trackNumber) {

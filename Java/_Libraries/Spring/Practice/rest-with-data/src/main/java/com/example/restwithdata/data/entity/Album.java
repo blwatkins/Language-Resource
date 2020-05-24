@@ -17,6 +17,7 @@ public class Album {
     @OneToMany(mappedBy="album")
     private List<Song> songs;
 
+    @Column(nullable=false)
     private String name;
 
     public Album(Artist artist, String name) {
