@@ -33,8 +33,8 @@ public class Album {
         return id;
     }
 
-    public Artist getArtist() {
-        return artist;
+    public List<Song> getSongs() {
+        return songs;
     }
 
     public String getName() {

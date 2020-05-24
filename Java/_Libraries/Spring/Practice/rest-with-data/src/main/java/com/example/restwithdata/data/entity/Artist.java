@@ -29,6 +29,10 @@ public class Artist {
         return id;
     }
 
+    public List<Album> getAlbums() {
+        return albums;
+    }
+
     public String getName() {
         return name;
     }

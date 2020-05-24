@@ -32,10 +32,6 @@ public class Song {
         return id;
     }
 
-    public Album getAlbum() {
-        return album;
-    }
-
     public String getName() {
         return name;
     }
