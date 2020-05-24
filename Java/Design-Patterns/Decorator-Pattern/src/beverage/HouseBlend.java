@@ -1,6 +1,6 @@
 package beverage;
 
-public class HouseBlend {
+public class HouseBlend extends Beverage {
 
     public String getDescription() {
         return "House Blend";
