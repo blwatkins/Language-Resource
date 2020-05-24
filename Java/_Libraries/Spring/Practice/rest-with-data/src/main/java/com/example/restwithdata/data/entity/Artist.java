@@ -24,6 +24,7 @@ public class Artist {
 
     }
 
+    // removing getter removes information returned by custom controller
     public long getId() {
         return id;
     }
