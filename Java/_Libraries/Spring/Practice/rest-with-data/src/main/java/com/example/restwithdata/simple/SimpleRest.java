@@ -22,5 +22,4 @@ public class SimpleRest {
         String message = "Hello, " + name + "!";
         return (new Greeting(message));
     }
-
 }
