@@ -10,13 +10,17 @@ public class Album {
     @GeneratedValue(strategy= GenerationType.AUTO)
     private long id;
 
+    @ManyToOne
+    @JoinColumn(name="artistID")
+    Artist artist;
+
     @OneToMany(mappedBy="album")
     private List<Song> songs;
 
-
     private String name;
 
-    public Album(String name) {
+    public Album(Artist artist, String name) {
+        this.artist = artist;
         this.name = name;
     }
 
@@ -28,8 +32,16 @@ public class Album {
         return id;
     }
 
+    public Artist getArtist() {
+        return artist;
+    }
+
     public String getName() {
         return name;
+    }
+
+    public void setArtist(Artist artist) {
+        this.artist = artist;
     }
 
     public void setName(String name) {

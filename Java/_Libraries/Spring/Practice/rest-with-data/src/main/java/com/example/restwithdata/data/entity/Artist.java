@@ -1,5 +1,7 @@
 package com.example.restwithdata.data.entity;
 
+import java.util.List;
+
 import javax.persistence.*;
 
 @Entity
@@ -7,6 +9,9 @@ public class Artist {
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
     private long id;
+
+    @OneToMany(mappedBy="artist")
+    private List<Album> albums;
 
     private String name;
 
