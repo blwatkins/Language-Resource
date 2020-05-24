@@ -7,11 +7,11 @@ import javax.persistence.*;
 @Entity
 public class Album {
     @Id
-    @GeneratedValue(strategy= GenerationType.AUTO)
+    @GeneratedValue(strategy=GenerationType.AUTO)
     private long id;
 
     @ManyToOne
-    @JoinColumn(name="artistID")
+    @JoinColumn(name="artistID", nullable=false)
     Artist artist;
 
     @OneToMany(mappedBy="album")
