@@ -8,5 +8,4 @@ public abstract class BeverageDecorator extends Beverage {
     public BeverageDecorator(Beverage beverage) {
         this.beverage = beverage;
     }
-
 }
