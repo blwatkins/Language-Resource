@@ -9,7 +9,7 @@ public class Song {
     private long id;
 
     @ManyToOne
-    @JoinColumn(name="albumID")
+    @JoinColumn(name="albumID", nullable=false)
     Album album;
 
     private String name;
