@@ -1,6 +1,6 @@
 package pizza.ingredients.dough;
 
-public class Dough {
+public abstract class Dough {
     private String name;
 
     public Dough(String name) {
