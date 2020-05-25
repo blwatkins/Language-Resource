@@ -1,4 +1,4 @@
-package pizza.ingreedients.pepperoni;
+package pizza.ingredients.pepperoni;
 
 public class MildPepperoni extends Pepperoni {
 

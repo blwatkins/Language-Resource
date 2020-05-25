@@ -1,4 +1,4 @@
-package pizza.ingreedients.dough;
+package pizza.ingredients.dough;
 
 public class ThickCrustDough extends Dough {
 

@@ -1,4 +1,4 @@
-package pizza.ingreedients.cheese;
+package pizza.ingredients.cheese;
 
 public class ProvoloneCheese extends Cheese {
 

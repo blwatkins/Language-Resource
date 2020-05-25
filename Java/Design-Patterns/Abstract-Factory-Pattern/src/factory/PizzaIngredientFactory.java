@@ -1,8 +1,8 @@
 package factory;
 
-import pizza.ingreedients.cheese.Cheese;
-import pizza.ingreedients.dough.Dough;
-import pizza.ingreedients.pepperoni.Pepperoni;
+import pizza.ingredients.cheese.Cheese;
+import pizza.ingredients.dough.Dough;
+import pizza.ingredients.pepperoni.Pepperoni;
 
 public interface PizzaIngredientFactory {
     Cheese createCheese();
