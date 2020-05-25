@@ -20,7 +20,7 @@ public abstract class PizzaStore {
         pizza.box();
     }
 
-    public Pizza createPizza(String type) {
+    private Pizza createPizza(String type) {
         Pizza pizza;
 
         if (type.equalsIgnoreCase("cheese")) {
