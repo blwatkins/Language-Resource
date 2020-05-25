@@ -1,4 +1,8 @@
 package pizza;
 
-public class PepperoniPizza {
+public class PepperoniPizza extends Pizza {
+
+    public PepperoniPizza() {
+        super("Pepperoni Pizza");
+    }
 }
