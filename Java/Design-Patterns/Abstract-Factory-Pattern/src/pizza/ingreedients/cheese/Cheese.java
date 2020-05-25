@@ -1,4 +1,9 @@
 package pizza.ingreedients.cheese;
 
-public class Cheese {
+public abstract class Cheese {
+    private String name;
+
+    public Cheese(String name) {
+        this.name = name;
+    }
 }
