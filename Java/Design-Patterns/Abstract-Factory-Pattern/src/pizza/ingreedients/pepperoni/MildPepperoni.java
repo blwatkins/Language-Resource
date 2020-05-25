@@ -1,4 +1,4 @@
 package pizza.ingreedients.pepperoni;
 
-public class SlicedPepperoni {
+public class MildPepperoni {
 }
