@@ -1,0 +1,8 @@
+package pizza.ingreedients.dough;
+
+public class ThickCrustDough extends Dough {
+
+    public ThickCrustDough() {
+        super("Thick Crust Dough");
+    }
+}
