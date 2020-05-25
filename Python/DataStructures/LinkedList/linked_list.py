@@ -49,21 +49,6 @@ class LinkedList:
 
                     current.set_next(current.get_next().get_next())
 
-    def delete_node(self, node):
-
-        if not self.is_empty():
-
-            if node == self._head:
-                self._head = self._head.get_next()
-            else:
-                current = self._head
-
-                while current.get_next() != node and current.has_next():
-                    current = current.get_next()
-
-                if current.has_next():
-                    current.set_next(current.get_next().get_next())
-
     def get(self, index):
         data = None
 
