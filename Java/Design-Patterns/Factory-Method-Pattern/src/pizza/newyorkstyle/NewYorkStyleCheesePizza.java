@@ -1,4 +1,10 @@
 package pizza.newyorkstyle;
 
-public class NewYorkStyleCheesePizza {
+import pizza.Pizza;
+
+public class NewYorkStyleCheesePizza extends Pizza {
+
+    public NewYorkStyleCheesePizza() {
+        super("New York Style Cheese Pizza");
+    }
 }
