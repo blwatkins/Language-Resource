@@ -1,4 +1,13 @@
 package pizza.ingreedients.pepperoni;
 
-public class Pepperoni {
+public abstract class Pepperoni {
+    private String name;
+
+    public Pepperoni(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
 }
