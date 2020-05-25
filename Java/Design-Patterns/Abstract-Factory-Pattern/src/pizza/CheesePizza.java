@@ -2,10 +2,10 @@ package pizza;
 
 import factory.PizzaIngredientFactory;
 
-public class PepperoniPizza extends Pizza {
+public class CheesePizza extends Pizza {
 
-    public PepperoniPizza(PizzaIngredientFactory factory) {
-        super("Pepperoni Pizza", factory);
+    public CheesePizza(PizzaIngredientFactory factory) {
+        super("Cheese Pizza", factory);
     }
 
     public void prepare() {
@@ -14,7 +14,5 @@ public class PepperoniPizza extends Pizza {
         System.out.println("Adding " + cheese.getName());
         dough = factory.createDough();
         System.out.println("Adding " + dough.getName());
-        pepperoni = factory.createPepperoni();
-        System.out.println("Adding " + pepperoni.getName());
     }
 }
