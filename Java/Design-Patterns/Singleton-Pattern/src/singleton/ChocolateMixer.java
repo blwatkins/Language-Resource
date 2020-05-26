@@ -1,16 +1,16 @@
 package singleton;
 
 public class ChocolateMixer {
+    private static ChocolateMixer chocolateMixer;
     private boolean empty;
     private boolean boiled;
-    private ChocolateMixer chocolateMixer;
 
     private ChocolateMixer() {
         empty = true;
         boiled = false;
     }
 
-    public synchronized ChocolateMixer getInstance() {
+    public static synchronized ChocolateMixer getInstance() {
 
         if (chocolateMixer == null) {
             chocolateMixer = new ChocolateMixer();
