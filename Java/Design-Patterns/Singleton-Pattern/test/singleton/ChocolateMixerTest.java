@@ -8,5 +8,8 @@ class ChocolateMixerTest {
 
     @Test
     void getInstance() {
+        ChocolateMixer mixer = ChocolateMixer.getInstance();
+        ChocolateMixer mixer2 = ChocolateMixer.getInstance();
+        assertSame(mixer, mixer2);
     }
 }
