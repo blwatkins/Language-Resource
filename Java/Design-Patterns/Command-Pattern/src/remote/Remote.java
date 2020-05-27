@@ -10,7 +10,7 @@ public class Remote {
     private Command undoCommand;
 
     public Remote() {
-        numberOfSlots = 4;
+        numberOfSlots = 5;
         onCommands = new Command[numberOfSlots];
         offCommands = new Command[numberOfSlots];
         Command noCommand = new NoCommand();
