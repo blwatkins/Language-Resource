@@ -50,5 +50,4 @@ public class Remote {
     private boolean validButton(int slot) {
         return slot < numberOfSlots;
     }
-
 }
