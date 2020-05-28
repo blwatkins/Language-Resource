@@ -1,7 +1,7 @@
 package theater;
 
 public class DvdPlayer {
-    String dvd;
+    private String dvd;
 
     public DvdPlayer() {
         dvd = "";
