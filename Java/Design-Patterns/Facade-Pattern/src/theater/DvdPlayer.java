@@ -24,4 +24,8 @@ public class DvdPlayer {
         this.dvd = "";
         System.out.println("Ejecting DVD.");
     }
+
+    public void play() {
+        System.out.println("Playing DVD: " + dvd + "!");
+    }
 }
