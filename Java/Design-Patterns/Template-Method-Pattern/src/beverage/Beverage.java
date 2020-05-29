@@ -16,7 +16,7 @@ public abstract class Beverage {
 
     protected abstract void addCondiments();
 
-    private boolean customerWantsCondiments() {
+    protected boolean customerWantsCondiments() {
         return true;
     }
 
