@@ -6,7 +6,6 @@ public class Main {
         Beverage tea = new Tea();
         Beverage coffee = new Coffee();
         tea.prepare();
-        System.out.println();
         coffee.prepare();
     }
 }
