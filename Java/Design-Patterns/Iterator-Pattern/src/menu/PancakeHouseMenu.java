@@ -1,10 +1,10 @@
 package menu;
 
-import iterator.Iterator;
-import iterator.PancakeHouseMenuIterator;
-
 import java.util.ArrayList;
 import java.util.List;
+
+import iterator.Iterator;
+import iterator.PancakeHouseMenuIterator;
 
 public class PancakeHouseMenu implements Menu {
     private List<MenuItem> menuItems;
