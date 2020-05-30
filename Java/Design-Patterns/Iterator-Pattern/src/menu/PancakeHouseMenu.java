@@ -1,9 +1,12 @@
 package menu;
 
+import iterator.Iterator;
+import iterator.PancakeHouseMenuIterator;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class PancakeHouseMenu {
+public class PancakeHouseMenu implements Menu {
     List<MenuItem> menuItems;
 
     public PancakeHouseMenu() {
@@ -11,6 +14,10 @@ public class PancakeHouseMenu {
         addItem("Pancakes", 2.99);
         addItem("Blueberry Pancakes", 3.49);
         addItem("Waffles", 3.59);
+    }
+
+    public Iterator createIterator() {
+        return (new PancakeHouseMenuIterator(menuItems));
     }
 
     private void addItem(String name, double price) {
