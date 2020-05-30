@@ -1,6 +1,6 @@
 package menu;
 
-public class MenuComponent {
+public abstract class MenuComponent {
     private String name;
 
     public MenuComponent(String name) {
