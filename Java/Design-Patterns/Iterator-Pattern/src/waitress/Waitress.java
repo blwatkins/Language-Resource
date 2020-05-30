@@ -7,7 +7,7 @@ import menu.MenuItem;
 import java.util.List;
 
 public class Waitress {
-    List<Menu> menus;
+    private List<Menu> menus;
 
     public Waitress(List<Menu> menus) {
         this.menus = menus;
