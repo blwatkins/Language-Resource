@@ -3,8 +3,13 @@ package iterator;
 import menu.MenuItem;
 
 public class DinerMenuIterator implements Iterator {
-    MenuItem[] menuItems;
-    int index = 0;
+    private MenuItem[] menuItems;
+    private int index;
+
+    public DinerMenuIterator(MenuItem[] menuItems) {
+        this.menuItems = menuItems;
+        index = 0;
+    }
 
     public boolean hasNext() {
         boolean hasNext = false;
