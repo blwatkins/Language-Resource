@@ -1,10 +1,10 @@
 package waitress;
 
+import java.util.List;
+
 import iterator.Iterator;
 import menu.Menu;
 import menu.MenuItem;
-
-import java.util.List;
 
 public class Waitress {
     private List<Menu> menus;
