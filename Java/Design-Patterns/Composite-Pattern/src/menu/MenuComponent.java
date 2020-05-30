@@ -15,11 +15,11 @@ public abstract class MenuComponent {
         throw new UnsupportedOperationException();
     }
 
-    public void getDescription() {
+    public String getDescription() {
         throw new UnsupportedOperationException();
     }
 
-    public void getPrice() {
+    public double getPrice() {
         throw new UnsupportedOperationException();
     }
 
