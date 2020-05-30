@@ -4,9 +4,9 @@ import iterator.DinerMenuIterator;
 import iterator.Iterator;
 
 public class DinerMenu implements Menu {
-    static final int MAX_ITEMS = 6;
-    int numberOfItems;
-    MenuItem[] menuItems;
+    private static final int MAX_ITEMS = 6;
+    private int numberOfItems;
+    private MenuItem[] menuItems;
 
     public DinerMenu() {
         menuItems = new MenuItem[MAX_ITEMS];
