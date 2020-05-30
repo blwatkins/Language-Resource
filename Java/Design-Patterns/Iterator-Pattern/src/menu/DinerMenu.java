@@ -10,7 +10,7 @@ public class DinerMenu {
         numberOfItems = 0;
         addItem("BLT", 2.99);
         addItem("Soup of the Day", 3.29);
-        addItem("Hotdog", 3.05);
+        addItem("Hot Dog", 3.05);
     }
 
     private void addItem(String name, double price) {
