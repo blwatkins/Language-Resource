@@ -12,5 +12,4 @@ describe('test suite', () => {
     it('calls app.listen()', () => {
         expect(appMock.listen).toHaveBeenCalled();
     });
-
 });
