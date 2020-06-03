@@ -1,4 +1,4 @@
-import express, { response, request } from 'express';
+import express from 'express';
 import data from './data/data.json'; // data downloaded from https://www.mockaroo.com/
 
 const app = express();
