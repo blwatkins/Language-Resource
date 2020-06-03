@@ -21,7 +21,14 @@ public class SoldState extends State {
     }
 
     public void dispense() {
+        gumballMachine.releaseGumball();
 
+        if (gumballMachine.getGumballCount() > 0) {
+            gumballMachine.setCurrentState(gumballMachine.getNoQuarterState());
+        } else {
+            System.out.println("Out of gumballs");
+            gumballMachine.setCurrentState(gumballMachine.getSoldOutState());
+        }
     }
 
     public void refill() {
