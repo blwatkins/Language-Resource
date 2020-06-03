@@ -57,8 +57,10 @@ public class GumballMachine {
     }
 
     public void refill(int gumballCount) {
-        this.gumballCount += gumballCount;
-        currentState.refill();
+        if (gumballCount >= 0) {
+            this.gumballCount += gumballCount;
+            currentState.refill();
+        }
     }
 
     public void releaseGumball() {
