@@ -2,11 +2,10 @@ package state;
 
 import gumballmachine.GumballMachine;
 
-public class NoQuarterState implements State {
-    private GumballMachine gumballMachine;
+public class NoQuarterState extends State {
 
     public NoQuarterState(GumballMachine gumballMachine) {
-        this.gumballMachine = gumballMachine;
+        super(gumballMachine);
     }
 
     public void insertQuarter() {
