@@ -27,6 +27,7 @@ public class SoldOutState extends State {
     public void refill() {
 
         if (gumballMachine.getGumballCount() > 0) {
+            System.out.println("Gumball machine refilled");
             gumballMachine.setCurrentState(gumballMachine.getNoQuarterState());
         }
     }

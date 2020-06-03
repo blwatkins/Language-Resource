@@ -21,6 +21,7 @@ public class SoldState extends State {
     }
 
     public void dispense() {
+        System.out.println("Dispensing gumball");
         gumballMachine.releaseGumball();
 
         if (gumballMachine.getGumballCount() > 0) {
