@@ -23,4 +23,8 @@ public class SoldOutState extends State {
     public void dispense() {
         System.out.println("Gumball machine is sold out");
     }
+
+    public void refill() {
+
+    }
 }

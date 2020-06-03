@@ -13,4 +13,5 @@ public abstract class State {
     public abstract void ejectQuarter();
     public abstract void turnCrank();
     public abstract void dispense();
+    public abstract void refill();
 }

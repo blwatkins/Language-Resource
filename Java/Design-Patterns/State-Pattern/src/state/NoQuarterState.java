@@ -23,4 +23,8 @@ public class NoQuarterState extends State {
     public void dispense() {
         System.out.println("Cannot dispense gumball. No quarter was inserted into the machine");
     }
+
+    public void refill() {
+        System.out.println("Gumball machine refilled");
+    }
 }

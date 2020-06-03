@@ -23,4 +23,8 @@ public class HasQuarterState extends State {
     public void dispense() {
         System.out.println("Cannot dispense a gumball until the crank is turned");
     }
+
+    public void refill() {
+        System.out.println("Gumball machine refilled");
+    }
 }
