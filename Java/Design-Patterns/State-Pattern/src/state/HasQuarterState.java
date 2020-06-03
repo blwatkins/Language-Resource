@@ -9,7 +9,7 @@ public class HasQuarterState extends State {
     }
 
     public void insertQuarter() {
-
+        System.out.println("Machine already has a quarter");
     }
 
     public void ejectQuarter() {
@@ -21,6 +21,6 @@ public class HasQuarterState extends State {
     }
 
     public void dispense() {
-
+        System.out.println("Cannot dispense a gumball until the crank is turned");
     }
 }
