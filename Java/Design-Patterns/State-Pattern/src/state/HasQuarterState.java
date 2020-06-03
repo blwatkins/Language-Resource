@@ -13,11 +13,13 @@ public class HasQuarterState extends State {
     }
 
     public void ejectQuarter() {
-
+        System.out.println("Ejecting Quarter");
+        gumballMachine.setCurrentState(gumballMachine.getNoQuarterState());
     }
 
     public void turnCrank() {
-
+        System.out.println("Turning Crank");
+        gumballMachine.setCurrentState(gumballMachine.getSoldState());
     }
 
     public void dispense() {
