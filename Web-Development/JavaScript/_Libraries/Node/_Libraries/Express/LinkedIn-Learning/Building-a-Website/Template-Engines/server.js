@@ -18,6 +18,14 @@ app.get('/view', (request, response) => {
     response.render('view', {pageTitle: 'My View'});
 });
 
+app.get('/layout/template', (request, response) => {
+    let fruits = ['apple', 'banana', 'kiwi', 'strawberry', 'lemon'];
+    response.render('layout/layout', 
+    {pageTitle: 'My Layout with Template', 
+    template: 'myTemplate', 
+    fruits: fruits});
+});
+
 app.listen(PORT, () => {
     console.log(`Express Server listening on port ${PORT}`);
 });
