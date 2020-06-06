@@ -4,6 +4,7 @@ const path = require('path');
 const app = express();
 const PORT = 3000;
 
+// using ejs as the template engine
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
