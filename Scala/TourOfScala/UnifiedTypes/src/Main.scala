@@ -17,5 +17,9 @@ object Main {
     val integer: Int = 45
     val float: Float = integer
     println(float)
+
+    val character: Char = 'x'
+    val value: Int = character
+    println(value)
   }
 }
